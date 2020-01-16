@@ -31,6 +31,7 @@ class ViewController: UIViewController {
             return
         }
         
+        
         var output = ""
         // Convert number
         // Look at each character one by one
@@ -42,7 +43,7 @@ class ViewController: UIViewController {
             }
             
             // Translate each input character to the correct output chracter
-            switch textFieldAsString {
+            switch character {
             case "1": output += "1"
             // add a 1 to the output
             case "A"..."C", "2": output += "2"
@@ -65,7 +66,6 @@ class ViewController: UIViewController {
             //add 0 to the output
             default: output += "-"
             //add - to the output
-           
             }
         }
         convertedResult.text = output
